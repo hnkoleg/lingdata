@@ -1,0 +1,277 @@
+<!doctype html>
+
+<!-- так в HTML обозначаются комментарии. Выше вы видите объявление типа документа (DOCTYPE), так браузер понимает, что код ниже нужно интерпретировать как html -->
+
+<html>
+
+<!-- зона заголовка html, тег <title> - строка, которую браузер отображает на вкладках над страницами, <meta> и <link> сообщают технические сведения для браузера, например, что файл имеет кодировку Юникод (utf-8) -->
+
+	<head>
+		<title>Личная страница Ники Середы</title>
+	 	<!-- Required meta tags -->
+	 	<meta charset="utf-8">
+	 	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<meta name="description" content="Личная страница и контакты">
+
+		<!-- Bootstrap Core CSS -->
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" media="screen">
+<!-- Эта страница сделана с помощью bootstrap - популярной библиотеки для создания и настройки сайтов. Ниже вы увидите, что многие теги содержат атрибуты class - bootstrap содержит шаблоны, как такие элементы красиво оформить -->
+
+	</head>
+	
+<!-- body - главная, содержательная часть страницы. Контент на этой странице делится на меню (nav), "шапку" (header), "подвал" (footer) и все остальное (мы заключили остаток в тег section) -->	
+	<body>
+
+<!-- меню (navigation bar) -->
+
+		<nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
+
+<!-- div - это контейнеры - коробочки с текстом и/или графикой, которые можно вкладывать друг в друга. Пристально смотреть на теги в этой части кода не нужно -->
+			<div class="container"> 
+				<div class="navbar-header"> 
+					<a href="https://ling.hse.ru/" class="navbar-brand">Школа лингвистики НИУ ВШЭ</a> 
+				</div> 
+				<nav class="collapse navbar-collapse" id="bs-navbar"> 
+					<ul class="nav navbar-nav navbar-right"> 
+						<li> <a href="https://lingvocodes.github.io/HSEinfo/ba-ling-2021/index.html">Страница курса</a> </li> 
+						<li> <a href="https://lingvocodes.github.io/HSEinfo/ba-ling-2021/latin_2.html">Страница группы</a> </li> 
+<!-- поправьте номер группы в URL, если нужно (от 1 до 4) -->
+					</ul>
+				</nav> 
+			</div>
+		</nav>
+
+<!-- начинается шапка. у тега header есть атрибут style, который задает цвет фона и отступы. поменяйте значения атрибутов и посмотрите, как изменится страница -->
+
+		<header style="background:linear-gradient(to bottom, mediumseagreen, navy);
+		width: 1512px;
+        height: 370px;
+        padding-top: 90px;"> 
+			<div class="container"> 
+				<div class="row">
+					<div class="col-md-5">
+						<br><br>
+<!-- здесь и дальше нужно поменять весь содержательный текст, чтобы получилась ваша личная страница -->
+						<h1 style="color:powderblue;">Ника Середа</h1>
+						<hr> <!-- это горизонтальная линия -->
+						<h3 style="color:darkseagreen;"><i>Берегите букву<b> ё</b></i></h3> 
+					</div>
+					<div class="col-md-5">
+<!-- img - тег для вставки изображений. Мы использовали атрибут style, чтобы задать размер изображения и ширину рамки-->
+<!-- Измените URL на URL вашей фотографии, а также настройте размер изображения -->
+<img src="myphoto.JPG" style="height:320px; margin:20px 20px 40px 20px; " >
+					</div>
+				</div>
+			</div>
+		</header>
+
+<!-- часть страницы, которая под шапкой -->
+		<section id="portfolio">
+        <article style="background:linear-gradient(to bottom, navy, black);
+		width: 1512px;
+        height: 550px;
+        padding-top: 90px;"> 
+            <div class="container">
+<!-- атрибут col-md-... говорит, что контент будет разделен на несколько столбцов, их ширина соотносится как 3 - 6 - 3 (Bootstrap использует воображаемую сетку из 12 равных по ширине колонок) -->
+				
+				
+				<div class="col-md-4">
+					<article>
+						<h2 style="color:khaki">Мой страйк в дуолинго</h2>
+						<p><img src="IMG_9417.jpg" style="height:320px; margin:20px 20px 40px 20px; " ></p>
+						<p style="color:orange"><i>актуально на 24.09.2025</i></p>
+					</article>
+				</div>
+
+
+				<div class="col-md-4">
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+					<h2 style="color:khaki">Мой любимый язык -</h2>
+					<h1 style="color:orange">язык <i><b>ФАКТОВ</i></b></h1>
+				</div>
+				
+								
+			<div class="col-md-4">
+				<article>
+				<br>
+				<br>
+				<br>
+						<h2 style="color:khaki">Место учёбы</h2>
+						<h4><a href="https://www.hse.ru/ba/ling/"><i>Фундаментальная и компьютерная лингвистика, НИУ ВШЭ, Москва</i></a></h4>
+					</article>
+					<article>
+						<h2 style="color:gold">Родной город</h2>
+						<h4><a href="https://yandex.ru/maps/geo/udomlya/53044665/?ll=35.008775%2C57.878748&z=13"><i>Удомля</i></a></h4>
+					</article>
+					<article>
+						<h2 style="color:orange">Школа</h2>
+						<h4><a href="https://vk.com/mediacenter12gym"><i>Многопрофильная гимназия №12 г. Твери</i></a></h4>
+					</article>
+				</div>
+				
+			</div>
+		</section>
+		
+		
+		
+		
+		
+
+		<section id="portfolio">
+		<article style="background:linear-gradient(to bottom, black, brown);
+		width: 1512px;
+        height: 600px;
+        padding-top: 90px;"> 
+			<div class="container">
+				<div class="col-md-4">
+					<article>
+						<h1 style="color:seagreen"><b>Мои ИНТЕРЕСЫ</b></h1>
+					</article>
+					<article>
+						<h2 style="color:green">Научные</h2>
+						<h3 style="color:olivedrab">Лингвистика (вау!) <br>
+					    Генетика <br>
+						Нейробиология <br>
+						Биоинформатика </h3>
+					</article>
+					<article>
+						<h2 style="color:green">Не научные</h2>
+						<h3 style="color:olivedrab"> Фильмы</h3>
+						<h4 style="color:olive"><i>Мой любимый - Closet Land (1991)</i> </h4>
+						<h3 style="color:olivedrab">Книги</h3>
+						<h4 style="color:olive"><i>Особенно люблю антиутопии</i></h4>
+						<h3 style="color:olivedrab"> Музыка!</h3>
+						<h4 style="color:olive"><i>Моя любимая песня - Lane boy by twenty one pilots, <br>
+						а любимые исполнители - Arctic Monkeys и Lana Del Slay с Billie Eilish</i></h4>
+						</article>
+				</div>
+
+				<div class="col-md-4">
+					<article>
+						<h1 style="color:seagreen"><b>Мои ОБСЕССИИ</b></h1>
+						<h3 style="color:olivedrab">LEGO <br>
+						<br>
+						бабл-ти<br>
+						<br>
+						чипсы с крабом лейс<br>
+						<br>
+						малиновый скандик <br>
+						<br>
+						<del>Алан Рикман</del> <br>
+						<br>
+						азиатская кухня <br>
+						<br>
+						прогулки по вечерам <br>
+				        <br>
+						<a href="https://chickenhouse.ru">чикен-хауз</a><br>
+						<br>
+						блеск для губ vivienne sabo 11 оттенок</h3>
+					</article>
+				</div>
+
+				<div class="col-md-4">
+					<h1 style="color:seagreen"><b>ФАНФАКТЫ</b></h1>
+					    <h3 style="color:olive"> я не пью чай<br>
+					    <br>
+					    я не пью кофе<br>
+					    <br>
+					    я не могу пить газировку<br>
+					    <br>
+					    я люблю комочки в манке<br>
+					    <br>
+					    и пенку в молоке <br>
+					    <br>
+					    я была в Сириусе 5 раз <br>
+					    <br>
+					    я окончила музыкалку и художку<br>
+					    <br>
+					    я есть на обложке журнала  <br>
+					    <br>
+					    я умею играть в покер</h3>
+				</div>
+			</div>
+		</section>
+
+
+
+		<section id="portfolio">
+        <article style="background:linear-gradient(to bottom, brown, peachpuff);
+		width: 1512px;
+        height: 500px;
+        padding-top: 90px;"> 
+            <div class="container">
+<!-- атрибут col-md-... говорит, что контент будет разделен на несколько столбцов, их ширина соотносится как 3 - 6 - 3 (Bootstrap использует воображаемую сетку из 12 равных по ширине колонок) -->
+			
+               <div class="col-md-4">
+				<article>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+						<h1 style="color:lightskyblue">Мои соцсети</h1>
+						<h4 style="color:mediumblue"><a href="https://t.me/hnkoleg">TG</a>  (предпочтительнее)</h4>
+						<h4><a href="https://vk.com/hnkoleg">VK</a></h4>
+					</article>
+				</div>
+
+
+
+				<div class="col-md-4">
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+					<h1 style="color:lightskyblue">Моя философия</h1>
+					<h2 style="color:mediumblue"><b><i>БЫТЬ, А НЕ ПРИТВОРЯТЬСЯ</b></i></h2>
+				</div>
+				
+				
+				
+				<div class="col-md-4">
+					<article>
+						<h2 style="color:lightskyblue">Одна из любимых детских фоток</h2>
+						<p style="color:mediumblue">раздавала сваги уже тогда</p>
+						<p><img src="SV404994.jpg" style="height:320px; margin:20px 20px 40px 20px; " ></p>
+					</article>
+				</div>
+				
+			</div>
+		</section>
+		
+		
+		
+		
+
+
+
+
+
+
+<!-- это подвал. В этой части страницы обычно ставят копирайт (с помощью символа &copy;) и пишут об истории создания страницы. Поставьте свой копирайт -->
+		<footer class="bs-docs-footer"> 
+		<article style="background:linear-gradient(to bottom, peachpuff, papayawhip);
+		width: 1512px;
+        height: 200px;
+        padding-top: 90px;"> 
+			<div class="container"> 
+				<p style="text-align:right;color:navy ">&copy; Н. Середа, 2025</p> 
+			</div>
+		</footer>
+	</body>
+
+</html>
